@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!--
+    Made by mdmgamedev
+
+    This file uses the Notification api which essentialy makes it unusable on a local html file. To use it you
+    will need to host it on localhost or on a HTTP server. Personally, I recommend putting this in a new directory 
+    and in that new directory open the terminal and run "python -m http.server" or "python -m SimpleHTTPServer" for Python 2
+    (to do this python needs to be installed but i think every developer 
+    has python installed, if you don't have it go to https://www.python.org/downloads/ and get it from there)
+    You are free to use any other http hosting software if you want 
+
+    This webapp is open source so you can modify it in any way you want. You are also free to fork the repo
+    and publish your own version of this app
+
+-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>TaskTrack</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="js/taskslist.js"></script>
+        <script src="js/taskelement.js"></script>
+        <script src="js/filecheck.js"></script>
+    </head>
+
+    <body>
+        <div class="app-root">
+            <h1 class="apptitle">TaskTrack</h1>
+            <div id="content">
+                <script src="js/newitem.js"></script>
+            </div>
+            <div id="create">
+                <input class="textfield" id="newtaskinsettext" type="text" placeholder="Title">
+                <br/>
+                <br/>
+                <button class="add-button" onclick="makeTask()">Create</button>
+                <br/><br/><br/>
+                <button class="regular-button" onclick="saveTasks()">Save</button>
+                <button class="regular-button" onclick="loadTasks()">Load</button>
+                <button class="regular-button" onclick="emptyList()">Clean</button>
+                <button class="panic-button" onclick="clearLs()">Reset</button>
+
+            </div>
+        </div>
+    </body>
+</html>
