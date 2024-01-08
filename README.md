@@ -1,7 +1,7 @@
 ### TaskTrack Readme File
 
 # How to use 
-TaskTrack is a simple to-do list. You can add tasks to the list by typing the name of the task you want to add and clicking Create/pressing Enter
+TaskTrack is a simple to-do list app. You can add tasks to the list by typing the name of the task you want to add and clicking Create/pressing Enter
 
 You can also save and load to-do lists by clicking Save. Later on, you can click Load to load the saved list. By clicking Clear, you can clear the displayed list, but not the saved data. 
 
